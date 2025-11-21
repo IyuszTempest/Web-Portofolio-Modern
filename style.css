@@ -1,0 +1,283 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --bg-dark: #0a0a12; /* Warna dasar gelap */
+    --neon-blue: #d400ff; /* Warna Aksen 1 (Cyberpunk Cyan) */
+    --neon-purple: #fe9013; /* Warna Aksen 2 (Cyberpunk Purple) */
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--bg-dark);
+    color: var(--text-white);
+    overflow-x: hidden;
+}
+
+/* Background Anime Setup */
+.anime-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* GANTI URL DI BAWAH INI DENGAN GAMBAR ANIME KEREN LU */
+    background: url('https://images.unsplash.com/photo-1555680202-c86f0e12f086?q=80&w=2070&auto=format&fit=crop') no-repeat center center/cover;
+    z-index: -2;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(10, 10, 18, 0.85); /* Gelapkan gambar biar tulisan kebaca */
+    z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.highlight, .neon-text {
+    color: var(--neon-blue);
+    text-shadow: 0 0 10px var(--neon-blue);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-white);
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--neon-purple);
+}
+
+.menu-btn { display: none; }
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid var(--neon-purple);
+    box-shadow: 0 0 20px var(--neon-purple);
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* Buttons */
+.btn {
+    padding: 12px 30px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.3s;
+    margin: 0 10px;
+}
+
+.primary-btn {
+    background: linear-gradient(45deg, var(--neon-blue), var(--neon-purple));
+    color: #fff;
+    box-shadow: 0 0 15px rgba(0, 243, 255, 0.4);
+}
+
+.secondary-btn {
+    border: 2px solid var(--neon-blue);
+    color: var(--neon-blue);
+}
+
+.primary-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 25px rgba(89, 0, 255, 0.6);
+}
+
+/* Sections General */
+.section-padding {
+    padding: 80px 10%;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+/* Glass Cards (Services & Contact) */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--neon-blue);
+    box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card-icon {
+    font-size: 2.5rem;
+    color: var(--neon-purple);
+    margin-bottom: 20px;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.project-card {
+    background: #161621;
+    border-radius: 15px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    transition: 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.02);
+}
+
+.project-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+/* Contact */
+.whatsapp-btn {
+    background: #d325a7;
+    color: white;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    font-size: 0.9rem;
+    color: #888;
+}
+
+/* Footer Social Links */
+.social-links {
+    /* Dipindahkan ke dalam contact box, jadi margin atas lebih penting */
+    margin-top: 25px;
+}
+
+.social-links a {
+    color: #ccc; /* Warna dibuat lebih terang agar cocok di dalam contact box */
+    font-size: 1.5rem;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--neon-purple);
+}
+
+/* Anime Sticker */
+.anime-sticker {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 130px;
+    z-index: 99;
+    pointer-events: none; /* Agar tidak menghalangi klik elemen di bawahnya */
+}
+
+.anime-sticker img {
+    width: 100%;
+    height: auto;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Responsive Mobile */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Simplifikasi buat mobile */
+    }
+    .hero h1 { font-size: 2rem; }
+    .section-padding { padding: 60px 5%; }
+}
