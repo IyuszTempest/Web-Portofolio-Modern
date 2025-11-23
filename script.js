@@ -1,6 +1,6 @@
 // Typing Effect Logic
 const textElement = document.querySelector('.typing-text');
-const words = ["Information Systems Student", "Freelance Admin Support", "Photo Editor", "PC Builder", "IT Suport"];
+const words = ["Information Systems Student", "Freelance Admin Support", "Photo Editor", "PC Builder", "IT Support"];
 let wordIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
