@@ -246,21 +246,6 @@ footer {
     color: var(--neon-purple);
 }
 
-/* Anime Sticker */
-.anime-sticker {
-    position: fixed;
-    bottom: 0px;
-    right: 0px;
-    width: 130px;
-    z-index: 99;
-    pointer-events: none; /* Agar tidak menghalangi klik elemen di bawahnya */
-}
-
-.anime-sticker img {
-    width: 100%;
-    height: auto;
-}
-
 @keyframes float {
     0% {
         transform: translateY(0px);
