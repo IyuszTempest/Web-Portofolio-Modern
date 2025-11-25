@@ -38,11 +38,15 @@
     <nav class="navbar">
         <div class="logo">Iyz.<span class="highlight">Tech</span></div>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home" data-lang-key="navHome">Home</a></li>
+            <li><a href="#services" data-lang-key="navServices">Services</a></li>
+            <li><a href="#portfolio" data-lang-key="navPortfolio">Portfolio</a></li>
+            <li><a href="#contact" data-lang-key="navContact">Contact</a></li>
         </ul>
+        <div class="lang-switch-container">
+            <input type="checkbox" id="lang-toggle" class="lang-switch-checkbox">
+            <label for="lang-toggle" class="lang-switch-label"></label>
+        </div>
         <div class="menu-btn">
             <i class="fas fa-bars"></i>
         </div>
@@ -53,46 +57,46 @@
             <div class="avatar-container">
                 <img src="https://i.pinimg.com/736x/35/fd/04/35fd04227a3b4059689f798a8b189859.jpg" alt="Avatar" class="avatar">
             </div>
-            <h1>Hi, I'm <span class="neon-text">Natalius</span></h1>
-            <p>I am a <span class="typing-text"></span></p>
+            <h1><span data-lang-key="heroGreeting">Hi, I'm</span> <span class="neon-text">Natalius</span></h1>
+            <p><span data-lang-key="heroIntro">I am a</span> <span class="typing-text"></span></p>
             <div class="cta-buttons">
-                <a href="#contact" class="btn primary-btn">Hire Me <i class="fas fa-bolt"></i></a>
-                <a href="#portfolio" class="btn secondary-btn">My Works</a>
+                <a href="#contact" class="btn primary-btn" data-lang-key="heroCtaHire">Hire Me <i class="fas fa-bolt"></i></a>
+                <a href="#portfolio" class="btn secondary-btn" data-lang-key="heroCtaWorks">My Works</a>
             </div>
         </div>
     </section>
 
     <section id="services" class="services section-padding">
-        <h2 class="section-title">My <span class="highlight">Skill</span></h2>
+        <h2 class="section-title" data-lang-key="skillTitle">My <span class="highlight">Skill</span></h2>
         <div class="cards-container">
             <div class="glass-card">
                 <i class="fas fa-robot card-icon"></i>
-                <h3>AI & Admin Support</h3>
-                <p>Otomatisasi tugas admin super cepat dengan bantuan AI Prompting.</p>
+                <h3 data-lang-key="skill1Title">AI & Admin Support</h3>
+                <p data-lang-key="skill1Desc">Otomatisasi tugas admin super cepat dengan bantuan AI Prompting.</p>
             </div>
             <div class="glass-card">
                 <i class="fas fa-palette card-icon"></i>
-                <h3>Photo Color Grading</h3>
-                <p>Menghidupkan suasana di foto. Jasa color grading agar foto anda menjadi hidup dan penuh makna.</p>
+                <h3 data-lang-key="skill2Title">Photo Color Grading</h3>
+                <p data-lang-key="skill2Desc">Menghidupkan suasana di foto. Jasa color grading agar foto anda menjadi hidup dan penuh makna.</p>
             </div>
             <div class="glass-card">
                 <i class="fas fa-code card-icon"></i>
-                <h3>Web & IT Support</h3>
-                <p>Custom HTML/CSS, instalasi OS (Linux/Windows), dan troubleshooting PC.</p>
+                <h3 data-lang-key="skill3Title">Web & IT Support</h3>
+                <p data-lang-key="skill3Desc">Custom HTML/CSS, Pengembangan JavaScript, instalasi OS (Linux/Windows), dan troubleshooting PC.</p>
             </div>
         </div>
     </section>
 
     <section id="portfolio" class="portfolio section-padding">
-        <h2 class="section-title">My <span class="highlight">Services</span></h2>
+        <h2 class="section-title" data-lang-key="servicesTitle">My <span class="highlight">Services</span></h2>
         <div class="portfolio-grid">
             <div class="project-card">
                 <div class="project-img">
                     <img src="assets/gambar/photocolorization.jpg" alt="Coloring Project">
                 </div>
                 <div class="project-info">
-                    <h3>Photo Color Grading</h3>
-                    <p>Menghidupkan suasana di foto. Jasa color grading foto menjadi hidup dan HD.</p>
+                    <h3 data-lang-key="project1Title">Photo Color Grading</h3>
+                    <p data-lang-key="project1Desc">Menghidupkan suasana di foto. Jasa color grading foto menjadi hidup dan HD.</p>
                 </div>
             </div>
              <div class="project-card">
@@ -100,8 +104,8 @@
                     <img src="assets/gambar/codehtml.png" alt="preview Code HTML">
                 </div>
                 <div class="project-info">
-                    <h3>Website Development</h3>
-                    <p>Membuat atau mengembangkan sebuah website.</p>
+                    <h3 data-lang-key="project2Title">Website Development</h3>
+                    <p data-lang-key="project2Desc">Membuat atau mengembangkan sebuah website.</p>
                 </div>
             </div>
              <div class="project-card">
@@ -109,16 +113,16 @@
                     <img src="assets/gambar/desainwebsite.png" alt="Preview Website">
                 </div>
                 <div class="project-info">
-                    <h3>Website Desain</h3>
-                    <p>Mendesain website dengan modern, efisien dan seinteraktif mungkin.</p>
+                    <h3 data-lang-key="project3Title">Website Design</h3>
+                    <p data-lang-key="project3Desc">Mendesain website dengan modern, efisien dan seinteraktif mungkin.</p>
                 </div>
             </div>
             <div class="project-card">
                 <div class="project-img">
                     <img src="assets/gambar/desainpresentasi.png" alt="Preview Slide Presentasi by Natalius">
                 <div class="project-info">
-                    <h3>Presentation Desain</h3>
-                    <p>Desain presentasi untuk aktivitas akademik menggunakan Microsoft Powerpoint & Canva.</p>
+                    <h3 data-lang-key="project4Title">Slide Design</h3>
+                    <p data-lang-key="project4Desc">Desain presentasi untuk aktivitas akademik menggunakan Microsoft Powerpoint & Canva.</p>
                 </div>
             </div>
         </div>
@@ -126,9 +130,9 @@
 
     <section id="contact" class="contact section-padding">
         <div class="glass-card contact-box">
-            <h2>Ready to Collaborate?</h2>
-            <p>Mari diskusikan proyekmu sambil ngopi (atau nonton anime).</p>
-            <a href="https://wa.me/6282255810534" class="btn whatsapp-btn"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
+            <h2 data-lang-key="contactTitle">Ready to Collaborate?</h2>
+            <p data-lang-key="contactDesc">Mari diskusikan proyekmu sambil ngopi (atau nonton anime).</p>
+            <a href="https://wa.me/6282255810534" class="btn whatsapp-btn" data-lang-key="contactButton"><i class="fab fa-whatsapp"></i> Chat WhatsApp</a>
             <div class="social-links">
                 <!-- Ganti '#' dengan link profil Anda -->
                 <a href="https://github.com/IyuszTempest" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
@@ -143,9 +147,10 @@
 
 
     <footer>
-        <p>&copy; 2025 Natalius. Built with <i class="fas fa-heart"></i> & Code.</p>
+        <p>&copy; 2025 Natalius. <span data-lang-key="footerText">Built with</span> <i class="fas fa-heart"></i> & Code.</p>
     </footer>
 
+    <script src="translations.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
