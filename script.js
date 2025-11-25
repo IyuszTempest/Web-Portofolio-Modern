@@ -1,44 +1,36 @@
-// Typing Effect Logic
-const textElement = document.querySelector('.typing-text');
-const words = ["Information Systems Student", "Freelance Admin Support", "Photo Editor", "PC Builder", "IT Support"];
-let wordIndex = 0;
-let charIndex = 0;
-let isDeleting = false;
+// --- Animasi Teks Mengetik (jika sudah ada, biarkan saja) ---
+// Contoh:
+// const typedTextSpan = document.querySelector(".typing-text");
+// ... (logika teks mengetik Anda)
 
-const typeEffect = () => {
-    const currentWord = words[wordIndex];
-    const currentChars = currentWord.substring(0, charIndex);
-    
-    textElement.textContent = currentChars;
-    
-    // Ganti kecepatan ngetik biar kerasa natural
-    let typeSpeed = isDeleting ? 100 : 150;
 
-    if (!isDeleting && charIndex === currentWord.length) {
-        // Kalau udah selesai ngetik 1 kata, pause dulu
-        typeSpeed = 2000;
-        isDeleting = true;
-    } else if (isDeleting && charIndex === 0) {
-        // Kalau udah kehapus semua, ganti kata berikutnya
-        isDeleting = false;
-        wordIndex = (wordIndex + 1) % words.length;
-        typeSpeed = 500;
-    }
+// --- Logika untuk Animasi Scroll ---
 
-    charIndex = isDeleting ? charIndex - 1 : charIndex + 1;
-    
-    setTimeout(typeEffect, typeSpeed);
-}
+document.addEventListener("DOMContentLoaded", () => {
+    // Pilih semua elemen yang ingin dianimasikan
+    const animatedElements = document.querySelectorAll('.section-padding');
 
-// Jalankan efek pas halaman dimuat
-document.addEventListener('DOMContentLoaded', typeEffect);
+    // Opsi untuk Intersection Observer
+    // threshold: 0.1 berarti callback akan dijalankan saat 10% elemen terlihat
+    const observerOptions = {
+        root: null, // null berarti viewport browser
+        rootMargin: '0px',
+        threshold: 0.1
+    };
 
-// Optional: Smooth Scroll untuk navigasi (kalau browser lama)
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+    // Buat observer baru
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            // Jika elemen masuk ke viewport
+            if (entry.isIntersecting) {
+                // Tambahkan class 'is-visible' untuk memicu animasi CSS
+                entry.target.classList.add('is-visible');
+                // Hentikan pengamatan pada elemen ini setelah animasi berjalan sekali
+                observer.unobserve(entry.target);
+            }
         });
-    });
+    }, observerOptions);
+
+    // Mulai amati setiap elemen yang dipilih
+    animatedElements.forEach(el => observer.observe(el));
 });
