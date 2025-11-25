@@ -266,3 +266,21 @@ footer {
     .hero h1 { font-size: 2rem; }
     .section-padding { padding: 60px 5%; }
 }
+
+.section-padding {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* State akhir (terlihat) saat elemen masuk ke viewport */
+/* Kita kembalikan ke posisi semula dan opacity penuh */
+.section-padding.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Memberi sedikit delay pada kartu-kartu agar muncul satu per satu */
+.glass-card, .project-card {
+    transition-delay: 0.2s;
+}
