@@ -1,35 +1,28 @@
-# 🌐 Portfolio Website Template / Templat Website Portofolio
+# 🌐 Modern Portfolio Website Template
 
-English | [Bahasa Indonesia](#bahasa-indonesia)
-
-This repository contains the source code for a modern personal portfolio website featuring a dark mode design and neon accents. Perfect for developers or students looking for a sleek landing page template.
-
-Repository ini berisi source code untuk website portofolio pribadi dengan desain modern, gelap (dark mode), dan aksen neon. Cocok digunakan sebagai template landing page untuk developer atau mahasiswa.
+A sleek, high-performance personal portfolio landing page built with a modern dark theme and vibrant neon accents. Designed specifically for developers, students, or creatives who want a professional web presence.
 
 ---
 
-## 📸 UI Preview / Tampilan UI
+## 📸 UI Preview
+Visual representation of the interface:
 
 <p align="center">
-  <img src="assets/preview.png" alt="Web Preview" width="350">
+  <img src="assets/preview.png" alt="Web Preview" width="450">
 </p>
 
 ---
 
-## ⚡ Key Features / Fitur Utama
-
-| Feature / Fitur | Description / Deskripsi |
-| :--- | :--- |
-| **Modern Branding** | Header with glow effect / Header dengan efek glow. |
-| **Glassmorphism** | Transparent modern cards and buttons / Card dan button transparan kekinian. |
-| **Hero Section** | Pre-configured area for name and role / Area perkenalan untuk nama dan role. |
-| **Call to Action** | Interactive "Hire Me" & "My Works" buttons / Tombol interaktif yang fungsional. |
-| **Responsive** | Mobile-friendly layout / Tata letak otomatis menyesuaikan layar. |
+## ⚡ Key Features
+*   **Modern Branding**: Glow-effect typography for a futuristic aesthetic.
+*   **Glassmorphism UI**: High-end transparent cards and buttons for a clean look.
+*   **Responsive Layout**: Fully optimized for mobile, tablet, and desktop screens.
+*   **Interactive CTA**: Functional "Hire Me" and "My Works" call-to-action buttons.
+*   **Fast Loading**: Lightweight code structure for optimal performance.
 
 ---
 
-## 🛠️ Tech Stack / Teknologi yang Digunakan
-
-*   **HTML5**: Semantic structure / Struktur semantik.
-*   **CSS3**: Flexbox, Grid, & Root Variables for colors / Variabel warna & tata letak.
-*   **Google Fonts**: Montserrat / Poppins.
+## 🛠️ Tech Stack
+*   **HTML5**: Semantic and SEO-friendly structure.
+*   **CSS3**: Advanced layouts using Flexbox, Grid, and Root Variables for easy color customization.
+*   **Typography**: Integrated Google Fonts (Montserrat/Poppins).
